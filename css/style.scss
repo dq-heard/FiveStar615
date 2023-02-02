@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Mea+Culpa&family=Nunito+Sans:wght@600&family=Overlock:ital,wght@1,700&display=swap');
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+ 
+    &::-webkit-scrollbar {
+       height: .5em;
+       width: 1em;
+    }
+    
+    &::-webkit-scrollbar-track {
+       background-color: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+       background-color: #FED001;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 4em 5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Overlock', cursive;
+}
+
+nav {
+    .navbar-brand {
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 3rem;
+    
+        span {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 3rem;
+            display: none;
+        }
+    }
+    
+    .navbar-toggler {
+        font-size: 2em;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+        color: #C1895C;
+        margin: 1rem;
+        display: block;
+  
+        &:hover {
+            color: #FED001;
+        }
+    }
+
+    .socials {
+        a {
+            height: 2.2em;
+            width: 2.2em;
+            line-height: 2.2em;
+            border-radius: 50%;
+            font-size: 2.2rem;
+            text-align: center;
+            padding: 0;
+            color: #FFF;
+            text-decoration: none;
+            
+
+            &:hover {
+                background-color: #FED001;
+                animation: breathe 3s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+.jumbotron {
+    color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url(../media/hero-sm.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+
+    .container {
+        padding-top: 12em;
+        animation: heroContent .5s linear .3s backwards;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+        .link-btn {
+            display: inline-block;
+            padding: .3em .7em;
+            border-radius: .3em;
+            background-color: #FED001;
+            cursor: pointer;
+            font-size: 1.8rem;
+            color: #333;
+            text-decoration: none;
+            animation: breathe 3s ease-in-out infinite;
+        
+            &:hover {
+                background-color: #AF9635;
+            }
+        
+        }  
+    }
+}
+
+.advert {
+    background: #858587;
+    padding-bottom: 1em;
+
+    .row {
+        .content {
+            h2 {
+                color: #FED001;
+                font-size: 3rem;
+                margin-top: .3em;
+            }
+            
+            p { 
+                color: #FFF;
+                font-size: 2rem;
+                line-height: 2;
+            }
+        }
+    }
+}
+
+.featured {
+    background-color: #EBCA3F;
+
+    .container {
+        h2 {
+            color: #333;
+            font-size: 4rem;
+            padding-top: .5em;
+            margin-bottom: .5em;
+        }
+    }
+}
+
+.carousel {
+    padding: 0;
+    padding-top: 5em;
+    
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item:active {
+        height: 88vh;
+    }
+
+    .carousel-item:nth-child(1) {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+         url('../media/mens-sm-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-item:nth-child(2) {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+         url('../media/womens-sm-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-item:nth-child(3) {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+         url('../media/kids-sm-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .carousel-caption {
+        text-shadow: 0 1px 4px rgba(0, 0, 0, .9);
+        font-size: 1.6rem;
+
+        h3 {
+            font-size: 3.2rem;
+        }
+    }
+}
+
+.bio {
+    .container {
+        padding-top: 8em;
+
+        .row {
+            gap: 2em;
+
+            .content {
+                h2 {
+                    font-size: 3rem;
+                    color: #C1895C;
+                    margin-top: .3em;
+                }
+                
+                p {
+                    font-size: 2rem;
+                    line-height: 2;
+                }
+            }
+        } 
+    }
+}
+
+.contact {
+    .row {
+        img {
+            display: none;
+        }
+
+        .contact-info {
+            h3 {
+                font-size: 3rem;
+                color: #D48B25;
+            }
+    
+            .thanks {
+                font-size: 1.6rem;
+            }
+    
+            .icons {
+                padding: 1.7em 0;
+                gap: 1em;
+    
+                i {
+                    height: 2.2em;
+                    width: 2.2em;
+                    line-height: 2.2em;
+                    border-radius: 50%;
+                    font-size: 2rem;
+                    background: #C1895C;
+                    color: #FFF;
+                    text-align: center;
+                }
+    
+                p {
+                    font-size: 1.7rem;
+                    padding-top: .7em;
+                }
+            }
+    
+            .socials {
+                padding-top: 1em;
+
+                a {
+                    height: 2.2em;
+                    width: 2.2em;
+                    line-height: 2.2em;
+                    border-radius: 50%;
+                    font-size: 2.2rem;
+                    text-align: center;
+                    padding: 0;
+                    color: #FFF;
+                    text-decoration: none;
+    
+                    &:hover {
+                        background-color: #EBCA3F;
+                        animation: breathe 3s ease-in-out infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url(../media/hero.jpg);
+    }
+
+    .carousel {
+        .carousel-item:nth-child(1) {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+            url('../media/mens-hero.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    
+        .carousel-item:nth-child(2) {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+            url('../media/womens-hero.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    
+        .carousel-item:nth-child(3) {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+            url('../media/kids-hero.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    nav {
+        .nav-link {
+            font-size: 2.1rem;
+        }
+
+        .socials {
+            display: none;
+        }
+    }
+
+    .jumbotron .container {
+        max-width: 893px;
+    }
+
+    .advert {
+        padding-bottom: 3em;
+        .row {
+            .video {
+                max-height: 445px;
+                max-width: 346px;
+            }
+        } 
+    }
+
+    .bio {
+        .container {
+            max-height: 580px;
+
+            .row {
+                gap: 2em;
+                
+                img {
+                    max-height: 515px;
+                    max-width: 369px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        .row {
+            gap: 2em;
+
+            img {
+                display: block;
+                width: 100%;
+                max-height: 461px;
+                max-width: 446px;
+            }
+
+            .contact-info {
+                .icons {
+                    display: flex;
+
+                    p {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .socials {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    section {
+        padding: 6em 6%;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 67%;
+    }
+
+    .navbar {
+        .navbar-brand span {
+            display: inline-block;
+        }
+    }
+
+    .contact {
+        .row {
+            .image img {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+// Hero Animations
+@keyframes heroContent {
+    0% {
+      opacity: 0;
+      transform: translateX(-10em);
+    }
+}
+
+@keyframes breathe {
+    0% {
+       transform: scale(.9);
+    }
+    50% {
+       transform: scale(1);
+    }
+    100% {
+       transform: scale(.9);
+    }
+}
